@@ -4,7 +4,4 @@
 
     // conectando ao BD criado
     $db = mysqli_select_db($conexao, "admin");
-
-
-
 ?>

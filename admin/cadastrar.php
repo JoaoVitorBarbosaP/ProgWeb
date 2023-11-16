@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
 </head>
 <body>
  
     <section>
     <div class="form-box">
        <div class="form-value">
-        <form  action="acesso2.php" method="POST">
-            <h2>Login</h2>
+        <form  action="cadastrardb.php" method="POST">
+            <h2>Cadastro</h2>
             <div class="inputbox">
                 <ion-icon name="fodase"></ion-icon>
                 <input type="name" required name="usuario" >
@@ -24,10 +24,8 @@
                 <input type="password" required name="senha">
                 <label for="">Senha</label>
             </div>
-            <button>Log in</button>
+            <button>Cadastrar</button>
         </form>
-        <br>
-        <a href="cadastrar.php"><button>Cadastrar</button></a>
        </div>     
     </div>
     </section>

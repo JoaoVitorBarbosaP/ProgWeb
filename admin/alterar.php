@@ -1,3 +1,6 @@
+<head>
+<link rel="stylesheet" href="listar.css">
+</head>
 <?php  include "conexao.php"; ?>
 <?php
 
@@ -8,28 +11,29 @@ $busca = mysqli_query($conexao, $sql);
 while($dados=mysqli_fetch_array($busca)){
     
 ?>
-
+<div class="tabela">
 <form action="?pg=alterardb" method="post">
     <input type="hidden" name="id" value="<?=$dados['id'];?>"> 
 <table>
     <tr>
-        <td>Nome da página: </td>
+        <td>Nome do Produto: </td>
         <td><input name="nome" type="text" value="<?=$dados['nome'];?>"/></td>
     </tr>
     <tr> 
-        <td>URL: </td>
-        <td><input name="link" type="text" value="<?=$dados['link'];?>"/></td>
+        <td>Preço: </td>
+        <td><input name="preco" type="text" value="<?=$dados['preco'];?>"/></td>
     </tr>
     <tr>
-        <td>Conteúdo: </td>
+        <td>Quantidade do Produto: </td>
         <td><textarea name="conteudo" value="<?=$dados['conteudo'];?>"><?=$dados['conteudo'];?></textarea></td>
     </tr>
     <tr>
         <td></td>
-        <td><button name="Enviar">Cadastrar</button></td>
+        <td><button class="button-18" name="Enviar">Cadastrar</button></td>
     </tr>
 </table>
 </form>
+</div>
 <?php 
 }
 ?>

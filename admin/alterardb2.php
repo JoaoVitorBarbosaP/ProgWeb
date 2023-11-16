@@ -1,23 +1,24 @@
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
-<?php include "conexao.php";?>
+<?php include "conexaoformulario.php";?>
 <?php
 
 $id =           $_POST['id'];
 $nome =       $_POST['nome'];
-$preco =    $_POST['preco'];
-$conteudo =        $_POST['conteudo'];
+$email =    $_POST['email'];
+$telefone =        $_POST['telefone'];
+$assunto =    $_POST['assunto'];
+$mensagem =    $_POST['mensagem'];
 
+$sql2 = mysqli_query($conexao, "SELECT * FROM formulario WHERE id='$id'");
 
-$sql2 = mysqli_query($conexao, "SELECT * FROM paginas WHERE id='$id'");
-
-$sql = "UPDATE paginas SET nome='$nome', preco='$preco', conteudo='$conteudo' WHERE id=$id";
+$sql = "UPDATE formulario SET nome='$nome', email='$email', telefone='$telefone', assunto='$assunto', mensagem='$mensagem' WHERE id=$id";
 $altera = mysqli_query($conexao, $sql);
 
 if(!$altera){
     echo "Ocorreu um erro ao atualizar dados no banco de dados. <br>
-    <a href='?pg=listar'>Voltar</a>";
+    <a href='?pg=formulario'>Voltar</a>";
 }else{
 }
 ?>
@@ -34,5 +35,5 @@ if(!$altera){
         padding: 40px;
         border-radius: 15px;">
     <h3>Cadastrada com sucesso!</h3>
-    <center><a href='?pg=listar'><button class="button-18">Voltar</button></a></center>
+    <center><a href='?pg=formulario'><button class="button-18">Voltar</button></a></center>
 </div>

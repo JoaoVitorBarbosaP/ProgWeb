@@ -1,4 +1,8 @@
+<head>
+<link rel="stylesheet" href="listar.css">
+</head>
 <form action="?pg=inserirdb" method="post">
+<div class="tabela">
 <table> 
     <tr> 
         <td>Nome do Produto: </td>
@@ -6,15 +10,16 @@
     </tr>
     <tr> 
         <td>Preço: </td>
-        <td><input name="link" type="text"/></td>
+        <td><input name="preco" type="text"/></td>
     </tr>
     <tr>
-        <td>Conteúdo: </td>
+    <td>Quantidade do Produto: </td>
         <td><textarea name="conteudo" id="texto"></textarea></td>
     </tr>
     <tr>
         <td></td>
-        <td><button name="Enviar">Cadastrar</button></td>
+        <td><button class="button-18">Cadastrar</button></td>
     </tr>
 </table>
+</div>
 </form>
