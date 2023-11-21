@@ -25,7 +25,7 @@
 
             </div>
         </div>
-      
+              <center><img width="1341" height="500" src="https://grupofgrefrigeracao.com.br/wp-content/uploads/2018/02/banner_principal_sem_texto_para_programacao.png"></center>
 
         <?php
         // Declarando as variáveis de acesso as páginas
