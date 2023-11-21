@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+h2.titulo{
+    color: #126be0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header{
+    padding: 40px 4%;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color : #0f55ce
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(34, 31, 31);
+    transform: scale(1.05);
+}
+
+header .btn-topo button{
+    padding : 10px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #126be0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-topo button:hover{
+    box-shadow: 0px 0px 8px #126be0;
+}
+section .container{
+    padding: 40x 4%;
+}
+
+.section.container .flex{
+    align-items: center;
+    justify-content: center;
+}
+.container .centro1 h1{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: #127ce0;
+    font-size: 39px;
+    text-align: center;
+}
+.container .centro2 p{
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    position: absolute;
+    color: #033b85;
+    font-size: 35px;
+    text-align: center;
+    line-height: 25px;
+    
+}
+.container .centro2 p span{
+    color: #126be0;
+    font-size: 50px;
+}
+section.especialidades{
+    padding: 40px 4%; 
+}
+section.especialidades .flex{
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.especialidades .especialidades-box{
+    color: #033b85;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #033b85;
+    margin-top: 45px;
+    transition: .2s;
+    cursor: pointer;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #033b85;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #126be0;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+section.sobre{
+   padding: 40px 4%;
+}
+section.sobre .flex{
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #0754b9;
+}
+.sobre .txt-sobre h2{   
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;   
+}
+.sobre .txt-sobre h2 span{
+    display: block;
+}
+.sobre .txt-sobre p{
+    font-size: 17px;
+    margin: 20px 0px;
+    text-align:justify;
+}
+.img-sobre{
+    display: flex;
+}
+section.produtos{
+    padding: 40px 4%;
+}
+.produtos .flex{
+    gap: 60px;
+    display: flex;
+    flex-direction: row; 
+}
+.produtos .titulo-prods{
+    color: #033b85;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #033b85;
+    margin-top: 45px;
+    transition: .2s;
+    cursor: pointer;
+}
+.produtos .titulo-prods:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #033b85;
+}
+.produtos .titulo-prods p{
+    font-size: 15px;
+    margin: 20px 0px;
+    text-align:justify;
+}
+.produtos .titulo-prods h1{
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.btn-prod button{
+    padding : 10px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #126be0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-prod button:hover{
+    box-shadow: 0px 0px 8px #126be0;
+}
+
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color:#e6edf0;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #127ce0;
+    font-size: 18px;
+}
+footer{
+    padding: 5px 4%;
+    box-shadow: 0 0 40px 10px #127ce0;
+}
+footer .flex{
+    display: flex;
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0;
+    border-bottom: 2px solid #033b85;
+}
+
+footer .line-footer p i{
+    color: #033b85;
+    font-size: 22px;  
+}
+footer .line-footer p a{
+    color: #033b85;
+}

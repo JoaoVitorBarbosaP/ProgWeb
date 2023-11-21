@@ -54,7 +54,7 @@
                         <p>Nossa maior expertise é levar conforto para o seu ambiente<span>.</span></p>
                     </div>
                         <div class="img-site">
-                        <img width="1349" height="500" src="https://grupofgrefrigeracao.com.br/wp-content/uploads/2018/02/banner_principal_sem_texto_para_programacao.png">
+                        <center><img width="1349" height="500" src="https://grupofgrefrigeracao.com.br/wp-content/uploads/2018/02/banner_principal_sem_texto_para_programacao.png"></center>
                     </div>                                                     
              </div>
         </section>

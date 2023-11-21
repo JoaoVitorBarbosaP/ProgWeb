@@ -25,17 +25,12 @@
 
             </div>
         </div>
-              <center><img width="1341" height="500" src="https://grupofgrefrigeracao.com.br/wp-content/uploads/2018/02/banner_principal_sem_texto_para_programacao.png"></center>
+        <center><img width="1341" height="500" src="https://grupofgrefrigeracao.com.br/wp-content/uploads/2018/02/banner_principal_sem_texto_para_programacao.png"></center>
+      
 
         <?php
-        // Declarando as variáveis de acesso as páginas
-        $var = "admin/home.php";
-        // o @ suprime avisos de erro do PHP.
-        @$pg = $_GET['pg'];
     
-        // Utilizando a variável Superglobal SERVER
-        // Para testar se o parâmetro Query_String está
-        // sendo utilizado.
+        @$pg = $_GET['pg'];
     
         if(empty($_SERVER["QUERY_STRING"])) {
             
@@ -46,13 +41,5 @@
         
     </div>
 </header>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>
